@@ -9,17 +9,31 @@
 	display: flex;
 	flex-flow: column nowrap;
 	height: 600px;
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+		padding: 10px;
+		height: 30rem;
+	}
 	h1 {
 		color: $white;
 		font-size: 4.2em;
 		font-weight: $font-weight300;
 		padding-top: 100px;
+		@media screen and (max-width: 768px) {
+			font-size: 2rem;
+			padding: 0;
+		}
 	}
 	h2 {
 		color: $white;
 		font-size: 3em;
 		font-weight: $font-weight300;
 		padding-top: 5px;
+		@media screen and (max-width: 768px) {
+			font-size: 2rem;
+			padding: 0;
+			text-align: center;
+		}
 	}
 	&--name {
 		color: $green;
