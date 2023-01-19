@@ -1,18 +1,18 @@
 /** @format */
 
 .slogan {
+	background-color: $light-grey;
 	height: 200px;
 	z-index: 5;
-	background-color: var(--light-grey);
-}
-.slogan p {
-	font-size: 1.5em;
-	font-weight: 400;
-	line-height: 1.5;
-	text-align: center;
-	color: var(--text-grey);
-	padding: 60px;
-}
-.slogan .slogan--strong {
-	font-weight: 700;
+	p {
+		color: $text-grey;
+		font-size: 1.5em;
+		font-weight: 400;
+		line-height: 1.5;
+		padding: 60px;
+		text-align: center;
+	}
+	.slogan--strong {
+		font-weight: 700;
+	}
 }

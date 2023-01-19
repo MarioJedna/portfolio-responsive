@@ -1,44 +1,81 @@
 /** @format */
 
 .navigation {
-	background-color: var(--text-grey);
-	top: 0;
+	background-color: $text-grey;
 	position: sticky;
+	top: 0;
 	z-index: 10;
+	&__nav {
+		display: flex;
+		flex-flow: row nowrap;
+		height: 50px;
+		justify-content: space-evenly;
+	}
+	a {
+		align-items: center;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		padding: 0 60px;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover {
+			background-color: $light-grey;
+			color: $dark-grey;
+		}
+	}
+	&__nav_link-white {
+		background-color: $white;
+		position: relative;
+		right: 50px;
+		width: 20%;
+		img {
+			position: relative;
+			right: 50px;
+		}
+		&:hover {
+			background-color: $white;
+		}
+	}
+	&__nav_link-green {
+		background-color: $green;
+		color: $text-grey;
+	}
 }
-.navigation nav {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-evenly;
-	height: 50px;
-}
-.navigation a {
-	color: var(--white);
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-transform: uppercase;
-	padding: 0 60px;
-}
-.navigation a:hover {
-	background-color: var(--light-grey);
-	color: var(--dark-grey);
-}
-.navigation .navigation--white {
-	background-color: var(--white);
-	position: relative;
-	right: 50px;
-	width: 20%;
-}
-.navigation .navigation--white img {
-	position: relative;
-	right: 50px;
-}
-.navigation .navigation--white:hover {
-	background-color: var(--white);
-}
-.navigation .navigation--green {
-	background-color: var(--green);
-	color: var(--text-grey);
-}
+
+// .navigation nav {
+// 	display: flex;
+// 	flex-flow: row nowrap;
+// 	height: 50px;
+// 	justify-content: space-evenly;
+// }
+// .navigation a {
+// 	align-items: center;
+// 	color: $white;
+// 	display: flex;
+// 	justify-content: center;
+// 	padding: 0 60px;
+// 	text-decoration: none;
+// 	text-transform: uppercase;
+// }
+// .navigation a:hover {
+// 	background-color: $light-grey;
+// 	color: $dark-grey;
+// }
+// .navigation .navigation__nav_link-white {
+// 	background-color: $white;
+// 	position: relative;
+// 	right: 50px;
+// 	width: 20%;
+// }
+// .navigation .navigation__nav_link-white img {
+// 	position: relative;
+// 	right: 50px;
+// }
+// .navigation .navigation__nav_link-white:hover {
+// 	background-color: $white;
+// }
+// .navigation .navigation__nav_link-green {
+// 	background-color: $green;
+// 	color: $text-grey;
+// }
