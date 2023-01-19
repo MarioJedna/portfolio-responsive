@@ -1,29 +1,48 @@
 /** @format */
 
 .mainphoto {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
 	background-image: url(../img/plants.png);
 	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 600px;
+	border-top: solid white 5em;
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: center;
-	border-top: solid white 5em;
+	height: 600px;
+	h1 {
+		color: $white;
+		font-size: 4.2em;
+		font-weight: $font-weight300;
+		padding-top: 100px;
+	}
+	h2 {
+		color: $white;
+		font-size: 3em;
+		font-weight: $font-weight300;
+		padding-top: 5px;
+	}
+	&--name {
+		color: $green;
+		border-bottom: 8px solid white;
+		font-weight: $font-weight700;
+	}
 }
-.mainphoto h1 {
-	color: var(--white);
-	font-size: 4.2em;
-	font-weight: 300;
-	padding-top: 100px;
-}
-.mainphoto h2 {
-	color: var(--white);
-	font-size: 3em;
-	font-weight: 300;
-	padding-top: 5px;
-}
-.mainphoto--name {
-	color: var(--green);
-	border-bottom: 8px solid white;
-	font-weight: 700;
-}
+
+// .mainphoto h1 {
+// 	color: $white;
+// 	font-size: 4.2em;
+// 	font-weight: $font-weight300;
+// 	padding-top: 100px;
+// }
+
+// .mainphoto h2 {
+// 	color: $white;
+// 	font-size: 3em;
+// 	font-weight: $font-weight300;
+// 	padding-top: 5px;
+// }
+// .mainphoto--name {
+// 	color: $green;
+// 	border-bottom: 8px solid white;
+// 	font-weight: $font-weight700;
+// }
