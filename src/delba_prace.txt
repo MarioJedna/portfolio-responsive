@@ -1,0 +1,5 @@
+Honza 88 - navigation,  main_photo, slogan
+
+Luky = process, skills, portfolio, about_me
+
+Peta = footer, socials, contacts
